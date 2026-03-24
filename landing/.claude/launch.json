@@ -1,0 +1,1 @@
+{"version":"0.0.1","configurations":[{"name":"solar303-landing","runtimeExecutable":"npx","runtimeArgs":["serve","-p","3100","."],"port":3100}]}

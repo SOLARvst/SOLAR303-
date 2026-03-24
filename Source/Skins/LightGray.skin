@@ -1,0 +1,5 @@
+name        = Light Gray
+gradient_top    = #c8c5c0
+gradient_bottom = #525050
+chassis_text    = #101010
+description = Classic silver-gray TB-303 style

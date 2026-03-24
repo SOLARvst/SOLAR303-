@@ -1,0 +1,9 @@
+build_windows/
+*.zip
+*.pdb
+*.lib
+*.obj
+*.exe
+*.dll
+*.ilk
+*.exp

@@ -1,0 +1,5 @@
+name        = Black
+gradient_top    = #252525
+gradient_bottom = #000000
+chassis_text    = #e0ddd8
+description = All-black stealth mode

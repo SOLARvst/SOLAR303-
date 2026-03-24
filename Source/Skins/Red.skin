@@ -1,0 +1,5 @@
+name        = Red
+gradient_top    = #c42c0c
+gradient_bottom = #000000
+chassis_text    = #e0ddd8
+description = Default — Roland red to black gradient

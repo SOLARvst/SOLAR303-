@@ -1,0 +1,5 @@
+name        = Yellow
+gradient_top    = #ddaa00
+gradient_bottom = #000000
+chassis_text    = #e0ddd8
+description = Acid yellow to black gradient

@@ -1,0 +1,5 @@
+name        = Dark Gray
+gradient_top    = #525050
+gradient_bottom = #1a1818
+chassis_text    = #e0ddd8
+description = Original pre-red dark gray chassis

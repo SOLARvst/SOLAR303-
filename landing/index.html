@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLAR 303 — The Acid Machine</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-hex">⬡</span>
+      <span class="logo-solar">SOLAR</span><span class="logo-303">303</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#features">FEATURES</a></li>
+      <li><a href="#specs">SPECS</a></li>
+      <li><a href="#download">DOWNLOAD</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#gallery">GALLERY</a>
+    <a href="#features">FEATURES</a>
+    <a href="#specs">SPECS</a>
+    <a href="#download">DOWNLOAD</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- HUD targeting rings -->
+    <div class="hud-rings">
+      <div class="hud-ring r1"></div>
+      <div class="hud-ring r2"></div>
+      <div class="hud-ring r3"></div>
+      <div class="hud-ring r4"></div>
+      <div class="hud-crosshair">
+        <div class="ch-h"></div>
+        <div class="ch-v"></div>
+        <div class="ch-core"></div>
+      </div>
+    </div>
+
+    <!-- Rising neon words column -->
+    <div class="neon-words-col">
+      <div class="neon-words-track">
+        <span>ACID BASS</span>
+        <span>DIODE LADDER</span>
+        <span>16 STEPS</span>
+        <span>SAWTOOTH</span>
+        <span>SQUARE WAVE</span>
+        <span>RESONANCE</span>
+        <span>CUTOFF</span>
+        <span>SLIDE</span>
+        <span>ACCENT</span>
+        <span>DISTORTION</span>
+        <span>REVERB</span>
+        <span>DELAY</span>
+        <span>MIDI LEARN</span>
+        <span>VST3</span>
+        <span>SKIN SYSTEM</span>
+        <span>DRAG MIDI</span>
+        <span>BPM SYNC</span>
+        <span>ACID BASS</span>
+        <span>DIODE LADDER</span>
+        <span>16 STEPS</span>
+        <span>SAWTOOTH</span>
+        <span>SQUARE WAVE</span>
+        <span>RESONANCE</span>
+        <span>CUTOFF</span>
+        <span>SLIDE</span>
+        <span>ACCENT</span>
+        <span>DISTORTION</span>
+        <span>REVERB</span>
+        <span>DELAY</span>
+        <span>MIDI LEARN</span>
+        <span>VST3</span>
+        <span>SKIN SYSTEM</span>
+        <span>DRAG MIDI</span>
+        <span>BPM SYNC</span>
+      </div>
+    </div>
+
+
+    <div class="hero-content">
+      <div class="hero-label">VIRTUAL BASS SYNTHESIZER</div>
+      <h1 class="hero-title">
+        <span class="ht-solar">SOLAR</span>
+        <span class="ht-303">303</span>
+      </h1>
+      <p class="hero-tagline">THE ACID MACHINE</p>
+      <div class="hero-btns">
+        <button class="btn-acid" id="acid-btn">
+          <span class="btn-icon">▶</span> HEAR THE ACID
+        </button>
+      </div>
+      <div class="preset-selector">
+        <span class="preset-label">PRESET</span>
+        <button class="preset-btn active" data-preset="1">I AM SOLAR</button>
+        <button class="preset-btn" data-preset="3">SOLARIS</button>
+        <button class="preset-btn" data-preset="2">AM I SOLAR</button>
+        <button class="preset-btn" data-preset="0">SOLAR ON ACID</button>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- BPM DIVIDER -->
+  <div class="bpm-divider">
+    <div class="wave-bars">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="bpm-tag">130 BPM</div>
+    <div class="wave-bars">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- GALLERY — Authentic Images -->
+  <section class="gallery reveal" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">HARDWARE ORIGIN</span>
+        <h2 class="section-title">THE AUTHENTIC ACID MACHINE</h2>
+        <p class="section-sub">Born from the legendary Roland TB-303 — every squelch faithfully recreated</p>
+      </div>
+
+      <div class="gallery-layout">
+        <div class="gallery-main">
+          <img src="images/303-LG.jpg" alt="SOLAR 303 Lite Gray Skin" />
+        </div>
+
+        <div class="gallery-skins">
+          <div class="skin-card">
+            <img src="images/303-DG.jpg" alt="SOLAR 303 Dark Gray Skin" />
+          </div>
+          <div class="skin-card">
+            <img src="images/303-B.jpg" alt="SOLAR 303 Black Skin" />
+          </div>
+          <div class="skin-card">
+            <img src="images/303-R.jpg" alt="SOLAR 303 Red Skin" />
+          </div>
+          <div class="skin-card">
+            <img src="images/303-Y.jpg" alt="SOLAR 303 Yellow Skin" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section reveal" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ABOUT</span>
+        <h2 class="section-title">THE ACID MACHINE</h2>
+        <p class="section-sub">Built from the ground up — a professional Acid Bass Synthesizer inspired by the legendary TB-303 sound, packed with features that go far beyond the original.</p>
+      </div>
+      <div class="about-content">
+        <p class="about-text">
+          <strong>Fat, meaty, and dripping with character.</strong> Every note hits with weight and warmth — from deep rolling bass lines to screaming acid squelches that cut through any mix.
+        </p>
+
+        <div class="about-engine">
+          <div class="about-engine-title">THE ENGINE</div>
+          <p class="about-text">A resonant <strong>Diode Ladder Filter</strong> delivering thick, organic acid tones with full control over Cutoff, Resonance, Envelope Mod, Decay, and Accent.</p>
+        </div>
+
+        <div class="about-features-list">
+          <div class="about-features-title">FEATURES</div>
+          <ul class="about-list">
+            <li>16-Step Sequencer with Slide &amp; Accent per step</li>
+            <li>Sawtooth &amp; Square oscillators</li>
+            <li>Distortion Drive — from warm saturation to full aggression</li>
+            <li>Tempo-Sync Delay with note-division presets</li>
+            <li>Lush Stereo Reverb</li>
+            <li>Full MIDI CC Learn — assign any hardware knob instantly</li>
+            <li>Pattern Randomizer with undo/redo history</li>
+            <li>Drag-to-DAW MIDI export</li>
+            <li>Multiple visual Skin themes</li>
+            <li>VST3</li>
+          </ul>
+        </div>
+
+        <div class="about-compat">
+          <div class="about-features-title">COMPATIBILITY</div>
+          <p class="about-text">Windows 10+ · VST3<br/>Works with Ableton Live, FL Studio, Cubase, Reaper, Studio One, and any VST3-compatible DAW.</p>
+        </div>
+
+        <div class="about-tags">
+          <span>VST3</span>
+
+          <span>WINDOWS 10+</span>
+          <span>MIDI LEARN</span>
+          <span>4 SKINS</span>
+          <span>16-STEP SEQ</span>
+          <span>DIODE LADDER</span>
+          <span>MIDI EXPORT</span>
+        </div>
+        <a href="https://solarvst.gumroad.com/l/solar303" class="btn-primary about-cta" target="_blank">↓ GET SOLAR 303 — $79.99</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features reveal" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ENGINE</span>
+        <h2 class="section-title">CORE FEATURES</h2>
+        <p class="section-sub">Everything that makes the acid flow</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-code">SEQ</div>
+          <h3>16-Step Sequencer</h3>
+          <p>A fully loaded step sequencer with variable length, musical scale lock, note range control, pattern randomizer, and drag-to-DAW MIDI export.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">LPF</div>
+          <h3>Acid Filter</h3>
+          <p>Screaming resonant low-pass filter. Cutoff, resonance, envelope mod — the unmistakable 303 character.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">SLD</div>
+          <h3>Slide & Accent</h3>
+          <p>Per-step portamento glide and accent boost that define the iconic acid sound.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">DST</div>
+          <h3>Distortion Drive</h3>
+          <p>From warm saturation to aggressive clipping. Push the signal until it screams.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">DLY</div>
+          <h3>Tempo-Sync Delay</h3>
+          <p>Rhythmic stereo echoes locked to your DAW's tempo with adjustable feedback.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">MDI</div>
+          <h3>MIDI Learn</h3>
+          <p>Lock-free MIDI CC mapping. Assign any hardware knob to any parameter instantly.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">RND</div>
+          <h3>Randomizer</h3>
+          <p>Intelligent one-click pattern generation. Discover unexpected acid sequences instantly.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">REV</div>
+          <h3>Reverb</h3>
+          <p>Lush stereo reverb from tight rooms to infinite ambient washes — place your bass in space.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-code">SKN</div>
+          <h3>Skin System</h3>
+          <p>Multiple visual themes. Switch between looks to match your studio aesthetic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEQUENCER DEEP-DIVE -->
+  <section class="seq-section reveal" id="sequencer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">SEQUENCER</span>
+        <h2 class="section-title">MORE THAN A STEP SEQUENCER</h2>
+        <p class="section-sub">We built the sequencer that didn't exist yet — the most complete, most musical, and most powerful acid sequencer in the world.</p>
+        <p class="section-sub seq-closing">The most advanced acid sequencer ever built. <em>Period.</em></p>
+      </div>
+
+      <div class="seq-grid">
+
+        <div class="seq-block">
+          <div class="seq-block-code">KEY · SCALE</div>
+          <h3>Musical Scale Lock</h3>
+          <p>Choose your root key and scale — Major, Minor, Pentatonic, and more. Every randomized note lands perfectly in key. No wrong notes, ever.</p>
+        </div>
+
+        <div class="seq-block">
+          <div class="seq-block-code">LOW · HIGH</div>
+          <h3>Note Range Control</h3>
+          <p>Set the low and high note boundary for randomization. Keep the pattern tight in one octave or spread it across the full range — your call.</p>
+        </div>
+
+        <div class="seq-block">
+          <div class="seq-block-code">REND A</div>
+          <h3>Full Randomizer</h3>
+          <p>One click randomizes the entire pattern — notes, accents, slides and step length — all constrained to your chosen scale and range.</p>
+        </div>
+
+        <div class="seq-block">
+          <div class="seq-block-code">REND K · REND S</div>
+          <h3>Targeted Randomization</h3>
+          <p>REND K randomizes only the knob values. REND S randomizes only the step pattern. Dial in the sound first, then explore the groove — or vice versa.</p>
+        </div>
+
+        <div class="seq-block">
+          <div class="seq-block-code">STEPS · LOCK</div>
+          <h3>Variable Length & Lock</h3>
+          <p>Set any pattern length from 1 to 16 steps with the + / − buttons. Hit LOCK to freeze the current pattern and protect it from accidental randomization.</p>
+        </div>
+
+        <div class="seq-block">
+          <div class="seq-block-code">&lt; · &gt;</div>
+          <h3>Pattern History</h3>
+          <p>Navigate forward and backward through your randomization history. Found something great? Step back to it instantly — nothing is ever lost.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNAL FLOW -->
+  <section class="signal-section reveal" id="signal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ARCHITECTURE</span>
+        <h2 class="section-title">SIGNAL FLOW</h2>
+        <p class="section-sub">The audio path from sequencer to output</p>
+      </div>
+
+      <div class="signal-chain">
+        <div class="chain-node">
+          <div class="cn-code">SEQ</div>
+          <div class="cn-label">Sequencer</div>
+        </div>
+        <div class="chain-arrow"><svg viewBox="0 0 40 12"><line x1="0" y1="6" x2="34" y2="6"/><polygon points="34,2 40,6 34,10"/></svg></div>
+        <div class="chain-node">
+          <div class="cn-code">OSC</div>
+          <div class="cn-label">Oscillator</div>
+        </div>
+        <div class="chain-arrow"><svg viewBox="0 0 40 12"><line x1="0" y1="6" x2="34" y2="6"/><polygon points="34,2 40,6 34,10"/></svg></div>
+        <div class="chain-node">
+          <div class="cn-code">LPF</div>
+          <div class="cn-label">Acid Filter</div>
+        </div>
+        <div class="chain-arrow"><svg viewBox="0 0 40 12"><line x1="0" y1="6" x2="34" y2="6"/><polygon points="34,2 40,6 34,10"/></svg></div>
+        <div class="chain-node">
+          <div class="cn-code">DST</div>
+          <div class="cn-label">Distortion</div>
+        </div>
+        <div class="chain-arrow"><svg viewBox="0 0 40 12"><line x1="0" y1="6" x2="34" y2="6"/><polygon points="34,2 40,6 34,10"/></svg></div>
+        <div class="chain-node">
+          <div class="cn-code">DLY</div>
+          <div class="cn-label">Delay</div>
+        </div>
+        <div class="chain-arrow"><svg viewBox="0 0 40 12"><line x1="0" y1="6" x2="34" y2="6"/><polygon points="34,2 40,6 34,10"/></svg></div>
+        <div class="chain-node">
+          <div class="cn-code">REV</div>
+          <div class="cn-label">Reverb</div>
+        </div>
+        <div class="chain-arrow"><svg viewBox="0 0 40 12"><line x1="0" y1="6" x2="34" y2="6"/><polygon points="34,2 40,6 34,10"/></svg></div>
+        <div class="chain-node active">
+          <div class="cn-code">OUT</div>
+          <div class="cn-label">Output</div>
+        </div>
+      </div>
+
+      <div class="signal-pulse-bar">
+        <div class="signal-pulse-fill"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs reveal" id="specs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TECHNICAL</span>
+        <h2 class="section-title">SPECIFICATIONS</h2>
+        <p class="section-sub">System requirements and technical details</p>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-row">
+          <span class="spec-k">FORMAT</span>
+          <span class="spec-v">VST3</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">PLATFORM</span>
+          <span class="spec-v">Windows 10+</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">OSCILLATOR</span>
+          <span class="spec-v">Sawtooth &amp; Square</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">FILTER</span>
+          <span class="spec-v">Resonant LP + HP</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">SEQUENCER</span>
+          <span class="spec-v">16-Step Pattern</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">STEP LENGTH</span>
+          <span class="spec-v">Variable 1–16</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">EFFECTS</span>
+          <span class="spec-v">Distortion, Delay, Reverb</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">MIDI</span>
+          <span class="spec-v">Full CC Learn Support</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">SKINS</span>
+          <span class="spec-v">Multiple Themes</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-k">LICENSE</span>
+          <span class="spec-v spec-free">$79.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="download reveal" id="download">
+    <div class="container">
+      <div class="dl-box">
+        <div class="dl-glow"></div>
+        <div class="dl-corners">
+          <div class="dlc tl"></div>
+          <div class="dlc tr"></div>
+          <div class="dlc bl"></div>
+          <div class="dlc br"></div>
+        </div>
+        <span class="section-tag">GET IT NOW</span>
+        <h2 class="dl-title">SOLAR 303</h2>
+        <p class="dl-sub">Unleash the acid. The authentic TB-303 experience for your productions.</p>
+        <div class="dl-price">$79<span class="dl-cents">.99</span></div>
+        <a href="https://solarvst.gumroad.com/l/solar303" class="btn-primary" target="_blank">↓ BUY NOW</a>
+        <div class="dl-formats">VST3 · WINDOWS 10+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-hex">⬡</span>
+          <span class="logo-solar">SOLAR</span><span class="logo-303">303</span>
+        </div>
+        <p>Virtual Bass Synthesizer<br/>Built with JUCE · Est. 2026</p>
+      </div>
+      <div class="footer-links">
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#specs">Specs</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>FORMATS</h4>
+        <ul>
+          <li>VST3</li>
+          <li>Windows 10+</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <p>dsolarvst@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SOLAR VST — ALL RIGHTS RESERVED</p>
+      <p class="footer-acid">∿ ACID MACHINE ∿</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
